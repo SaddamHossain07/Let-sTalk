@@ -1,11 +1,19 @@
+import Feed from '../../components/Feed/Feed';
+import Rightbar from '../../components/Rightbar/Rightbar';
+import Sidebar from '../../components/Sidebar/Sidebar';
 import Topbar from '../../components/Topbar/Topbar';
 import './Home.css'
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Topbar></Topbar>
-        </div>
+            <div className="homeContainer">
+                <Sidebar></Sidebar>
+                <Feed></Feed>
+                <Rightbar></Rightbar>
+            </div>
+        </>
     );
 };
 
