@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "textContent": "first post",
+        "image": "https://i.ibb.co/XSxsSp7/fly-agaric-468767-1920.jpg",
+        "date": "5 minute ago",
+        "userId": 1,
+        "like": 456,
+        "comment": 7
+    },
+    {
+        "id": 2,
+        "textContent": "second post",
+        "image": "https://i.ibb.co/DCw5HwH/coffee-171653-1920.jpg",
+        "date": "5 minute ago",
+        "userId": 2,
+        "like": 786,
+        "comment": 32
+    },
+    {
+        "id": 3,
+        "textContent": "third post",
+        "image": "https://i.ibb.co/Q6wCPDm/5.jpg",
+        "date": "5 minute ago",
+        "userId": 3,
+        "like": 456,
+        "comment": 12
+    },
+    {
+        "id": 4,
+        "textContent": "fourth post",
+        "image": "https://i.ibb.co/Pw9qG7j/Saddam.jpg",
+        "date": "5 minute ago",
+        "userId": 4,
+        "like": 75,
+        "comment": 8
+    },
+    {
+        "id": 5,
+        "textContent": "fifth post",
+        "image": "https://i.ibb.co/B4hrdTH/1.jpg",
+        "date": "5 minute ago",
+        "userId": 5,
+        "like": 95,
+        "comment": 98
+    }
+]
