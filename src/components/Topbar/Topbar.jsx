@@ -6,6 +6,11 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import photo from '../../assets/Saddam.jpg'
 import { Link } from 'react-router-dom';
 import { BsChatHeartFill } from "react-icons/bs";
+import { AiFillHome } from "react-icons/ai";
+import { MdVideoLibrary } from "react-icons/md";
+import { FaShop } from "react-icons/fa6";
+import { IoGameController } from "react-icons/io5";
+
 const Topbar = () => {
     return (
         <div className='topbarContainer'>
@@ -20,7 +25,12 @@ const Topbar = () => {
 
             </div>
             <div className="topbarCenter">
-
+                <div className='topbarCenterIcons'>
+                    <AiFillHome className='active' />
+                    <MdVideoLibrary />
+                    <FaShop />
+                    <IoGameController />
+                </div>
             </div>
             <div className="topbarRight">
                 <div className="topbarLinks">
@@ -40,10 +50,10 @@ const Topbar = () => {
                         <NotificationsIcon className='topbarIcon' />
                         <span className="topbarIconBadge">1</span>
                     </div>
+                    <Link to='/profile'>
+                        <img src={photo} alt="" className="topbarImage" />
+                    </Link>
                 </div>
-                <Link to='/profile'>
-                    <img src={photo} alt="" className="topbarImage" />
-                </Link>
             </div>
         </div>
     );

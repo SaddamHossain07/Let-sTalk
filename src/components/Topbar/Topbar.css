@@ -30,6 +30,22 @@
 
 .topbarCenter {
     flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbarCenterIcons {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    color: gray;
+}
+
+.active {
+    color: #1877f2;
 }
 
 .searchbar {
