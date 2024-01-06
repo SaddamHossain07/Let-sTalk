@@ -4,17 +4,23 @@ import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import photo from '../../assets/Saddam.jpg'
+import { Link } from 'react-router-dom';
+import { BsChatHeartFill } from "react-icons/bs";
 const Topbar = () => {
     return (
         <div className='topbarContainer'>
             <div className="topbarLeft">
-                <div className="logo">Let's Talk</div>
-            </div>
-            <div className="topbarCenter">
+                <Link to={'/'}>
+                    <BsChatHeartFill className='logo' />
+                </Link>
                 <div className="searchbar">
                     <SearchIcon className='searchIcon' />
-                    <input type="text" className='searchInput' placeholder='search for friends, posts or videos....' />
+                    <input type="text" className='searchInput' placeholder="search Let's Talk" />
                 </div>
+
+            </div>
+            <div className="topbarCenter">
+
             </div>
             <div className="topbarRight">
                 <div className="topbarLinks">
@@ -23,19 +29,21 @@ const Topbar = () => {
                 </div>
                 <div className="topbarIcons">
                     <div className="topbarIconItem">
-                        <PersonIcon />
+                        <PersonIcon className='topbarIcon' />
                         <span className="topbarIconBadge">1</span>
                     </div>
                     <div className="topbarIconItem">
-                        <ChatIcon />
+                        <ChatIcon className='topbarIcon' />
                         <span className="topbarIconBadge">1</span>
                     </div>
                     <div className="topbarIconItem">
-                        <NotificationsIcon />
+                        <NotificationsIcon className='topbarIcon' />
                         <span className="topbarIconBadge">1</span>
                     </div>
                 </div>
-                <img src={photo} alt="" className="topbarImage" />
+                <Link to='/profile'>
+                    <img src={photo} alt="" className="topbarImage" />
+                </Link>
             </div>
         </div>
     );
